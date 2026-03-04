@@ -51,7 +51,7 @@ https://mayanksamadhiya737.github.io/Jaana_Birthday/index.html
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/Mayanksamadhiya737/Jaana_Birthday.git
 ```
 
 2. Open the folder  
