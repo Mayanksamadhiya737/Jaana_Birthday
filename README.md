@@ -42,8 +42,6 @@ Every animation, every transition, every section was crafted with care and love 
 🌐 **View the Surprise Here:**  
 https://mayanksamadhiya737.github.io/Jaana_Birthday/index.html
 
-*(Replace the above link with your GitHub Pages URL)*
-
 ---
 
 ## ▶️ Run Locally
@@ -90,8 +88,4 @@ And turned feelings into a digital surprise.
 
 Made with ❤️ by **Mayank**
 
-If you like creative + emotional tech projects, feel free to connect and collaborate.
-
 ---
-
-⭐ If you liked this project, don’t forget to give it a star.
