@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Birthday Special 🎉</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/options.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body class="page-options">
+    <div class="options-container">
+        <div class="options-header">
+            <h1>Choose Your Adventure 💖</h1>
+            <p>Pick one and let's make this special!</p>
+        </div>
+
+        <div class="options-grid">
+            <!-- Birthday Quiz -->
+            <div class="option-card quiz-card" onclick="goToQuiz()">
+                <div class="option-emoji">🧩</div>
+                <h2>Birthday Quiz</h2>
+                <p>Test your knowledge!</p>
+                <div class="hover-arrow">→</div>
+            </div>
+
+            <!-- Letter -->
+            <div class="option-card letter-card" onclick="goToLetter()">
+                <div class="option-emoji">💌</div>
+                <h2>Love Letter</h2>
+                <p>Read my thoughts...</p>
+                <div class="hover-arrow">→</div>
+            </div>
+
+            <!-- Gallery -->
+            <div class="option-card gallery-card" onclick="goToGallery()">
+                <div class="option-emoji">🖼️</div>
+                <h2>Your Gallery</h2>
+                <p>Our beautiful moments</p>
+                <div class="hover-arrow">→</div>
+            </div>
+
+            <!-- Music -->
+            <div class="option-card music-card" onclick="goToMusic()">
+                <div class="option-emoji">🎵</div>
+                <h2>Music for You</h2>
+                <p>Your favorite songs</p>
+                <div class="hover-arrow">→</div>
+            </div>
+
+            <!-- Puzzle -->
+            <div class="option-card puzzle-card" onclick="goToPuzzle()">
+                <div class="option-emoji">❤️</div>
+                <h2>Puzzle Challenge</h2>
+                <p>Solve to see something special</p>
+                <div class="hover-arrow">→</div>
+            </div>
+
+            <!-- Back to Home (bonus) -->
+            <div class="option-card back-card" onclick="goBack()">
+                <div class="option-emoji">🏠</div>
+                <h2>Back Home</h2>
+                <p>Start over</p>
+                <div class="hover-arrow">→</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/options.js"></script>
+</body>
+</html>

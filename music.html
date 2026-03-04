@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music for You 🎵</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body class="page-music">
+    <div class="music-container">
+        <!-- Header -->
+        <div class="music-header">
+            <h1><i class="fas fa-music"></i> Music for You</h1>
+            <p>Our favorite songs together 💕</p>
+        </div>
+
+        <!-- Now Playing - Horizontal Layout -->
+        <div class="now-playing">
+            <!-- Left: Album Art -->
+            <div class="album-art">
+                <div class="album-cover" id="albumCover">
+                    <img id="albumImage" src="assets/music/tile-1.png" alt="Album cover" class="album-image">
+                </div>
+                <div class="record-spin" id="recordSpin"></div>
+            </div>
+            
+            <!-- Right: Info & Controls -->
+            <div class="now-playing-info">
+                <div class="song-info-text">
+                    <h2 id="nowPlayingTitle">Select a Song</h2>
+                    <p id="nowPlayingArtist">Your collection</p>
+                </div>
+                
+                <div class="progress-section">
+                    <div class="time-display">
+                        <span id="currentTime">0:00</span>
+                        <span id="totalTime">0:00</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="progressBar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Player Controls -->
+                <div class="player-controls">
+                    <button class="control-btn" onclick="toggleShuffle()">
+                        <i class="fas fa-random"></i>
+                    </button>
+                    <button class="control-btn" onclick="previousTrack()">
+                        <i class="fas fa-step-backward"></i>
+                    </button>
+                    <button class="control-btn play-btn" id="playBtn" onclick="togglePlay()">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button class="control-btn" onclick="nextTrack()">
+                        <i class="fas fa-step-forward"></i>
+                    </button>
+                    <button class="control-btn" onclick="toggleRepeat()">
+                        <i class="fas fa-redo"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist-section">
+            <h3>playlist</h3>
+            <div class="playlist" id="playlist">
+                <!-- Songs will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="music-footer">
+            <button class="btn-back" onclick="goToOptions()">
+                <i class="fas fa-arrow-left"></i> Back to Options
+            </button>
+        </div>
+    </div>
+
+    <!-- Hidden audio element -->
+    <audio id="audioPlayer"></audio>
+
+    <script src="js/music.js"></script>
+</body>
+</html>

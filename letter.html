@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Letter 💌</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body class="page-letter">
+
+<div id="wrapper">
+
+    <!-- GIFT BOX ANIMATION & LETTER OPEN BUTTON - HIDDEN (auto-open letter) -->
+
+    <!-- LETTER POPUP -->
+    <div class="box__letter">
+        <div class="letter__border">
+
+            <!-- LETTER -->
+            <div class="letter">
+
+                <!-- TITLE -->
+                <div class="title__letter"></div>
+
+                <!-- CONTENT -->
+                <div class="content__letter">
+
+                    <!-- LEFT -->
+                    <div class="left">
+                        <img
+                            id="heart__letter"
+                            src="https://media.giphy.com/media/YKUvclrGYmDKXwtphf/giphy.gif"
+                            alt="heart"
+                            class="left-gif"
+                        >
+
+                        <img
+                            src="https://media.giphy.com/media/m85llaN7ZkFIHtURiC/giphy.gif"
+                            alt="love"
+                            class="left-gif"
+                        >
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="right">
+                        <div class="text__letter">
+                            <p></p>
+                        </div>
+                        
+                        <img
+                            src="assets/letter/lettersmall.gif"
+                            alt="cute"
+                            class="letter-small-gif"
+                        >
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CLOSE BUTTON -->
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BACK TO OPTIONS BUTTON -->
+    <div class="letter-nav-footer">
+        <button class="btn-back-options" onclick="goToOptions()">
+            <i class="fa-solid fa-arrow-left"></i> Back to Options
+        </button>
+    </div>
+
+</div>
+
+<!-- LETTER JS -->
+<script src="js/letter.js"></script>
+
+</body>
+</html>

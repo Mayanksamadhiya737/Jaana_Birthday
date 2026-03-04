@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Quiz 🧩</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body class="page-quiz">
+    <div class="quiz-container">
+        <!-- Quiz Header -->
+        <div class="quiz-header">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span class="question-counter"><span id="currentQuestion">1</span> / <span id="totalQuestions">5</span></span>
+        </div>
+
+        <!-- Quiz Content -->
+        <div class="quiz-content">
+            <div class="quiz-wrapper" id="quizWrapper">
+                <!-- Questions will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Quiz Footer -->
+        <div class="quiz-footer">
+            <button class="btn-quiz prev-btn" id="prevBtn" onclick="previousQuestion()" style="display:none;">← Previous</button>
+            <button class="btn-quiz next-btn" id="nextBtn" onclick="nextQuestion()">Next →</button>
+            <button class="btn-quiz submit-btn" id="submitBtn" onclick="submitQuiz()" style="display:none;">Submit Quiz 🎉</button>
+        </div>
+    </div>
+
+    <!-- Result Modal -->
+    <div id="resultModal" class="modal" style="display:none;">
+        <div class="modal-content result-modal">
+            <div class="result-emoji" id="resultEmoji"></div>
+            <h2 id="resultTitle"></h2>
+            <p id="resultMessage"></p>
+            <div class="result-score" id="resultScore"></div>
+            <button class="btn-quiz submit-btn" onclick="goToOptions()">Back to Options 🏠</button>
+        </div>
+    </div>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>

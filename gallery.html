@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Gallery 🖼️</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body class="page-gallery">
+    <div class="gallery-container">
+        <!-- Header -->
+        <div class="gallery-header">
+            <h1>Your Beautiful Moments 💕</h1>
+            <div class="view-toggle">
+                <button class="toggle-btn active" onclick="switchToGrid()" title="Grid View">
+                    <i class="fas fa-th"></i> Grid
+                </button>
+                <button class="toggle-btn" onclick="switchToSlideshow()" title="Slideshow">
+                    <i class="fas fa-play-circle"></i> Slideshow
+                </button>
+            </div>
+        </div>
+
+        <!-- Grid View -->
+        <div id="gridView" class="gallery-view active">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Images will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Slideshow View -->
+        <div id="slideshowView" class="gallery-view">
+            <div class="slideshow-container">
+                <div class="slide-wrapper">
+                    <button class="slide-btn prev-slide" onclick="previousSlide()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <img id="slideshowImage" src="" alt="Gallery image" class="slideshow-image">
+                    <button class="slide-btn next-slide" onclick="nextSlide()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="slideshow-controls">
+                    <div class="slide-counter">
+                        <span id="currentSlide">1</span> / <span id="totalSlides">9</span>
+                    </div>
+                </div>
+                <div class="slide-progress">
+                    <div class="slide-progress-bar" id="slideProgress"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="gallery-footer">
+            <button class="btn-back" onclick="goToOptions()">
+                <i class="fas fa-arrow-left"></i> Back to Options
+            </button>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal for Grid -->
+    <div id="lightboxModal" class="lightbox" style="display:none;">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightboxImage">
+        <a class="lightbox-prev" onclick="prevLightbox()">&#10094;</a>
+        <a class="lightbox-next" onclick="nextLightbox()">&#10095;</a>
+    </div>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html>
