@@ -40,7 +40,7 @@ Every animation, every transition, every section was crafted with care and love 
 ## 🚀 Live Website
 
 🌐 **View the Surprise Here:**  
-https://your-username.github.io/your-repository-name/
+https://mayanksamadhiya737.github.io/Jaana_Birthday/index.html
 
 *(Replace the above link with your GitHub Pages URL)*
 
